@@ -1,5 +1,8 @@
 package net.owc.quatschsquad;
 
+import net.owc.quatschsquad.block.ModBlocks;
+import net.owc.quatschsquad.item.ModItemGroup;
+import net.owc.quatschsquad.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -26,6 +29,11 @@ public class QuatschSquad {
     public QuatschSquad(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        ModItemGroup.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
