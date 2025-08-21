@@ -1,3 +1,8 @@
 {
-  "block.quatschsquad.globe": "Globe"
+  "item.quatschsquad.mine": "Landmine",
+
+  "block.quatschsquad.globe": "Globe",
+
+  "itemgroup.quatschsquad.explosives": "QuatschSquad: Explosives",
+  "itemgroup.quatschsquad.politics": "QuatschSquad: Politics"
 }

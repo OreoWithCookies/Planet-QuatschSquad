@@ -16,7 +16,8 @@ import java.util.function.Supplier;
 import static net.minecraft.world.item.Items.registerBlock;
 
 public class ModBlocks {
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(QuatschSquad.MOD_ID);
+    public static final DeferredRegister.Blocks BLOCKS =
+            DeferredRegister.createBlocks(QuatschSquad.MOD_ID);
 
     //add Blocks below
     public static final DeferredBlock<Block> GLOBE = registerBlock("globe",
