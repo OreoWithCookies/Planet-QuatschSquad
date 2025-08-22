@@ -32,6 +32,14 @@ public class ModItemGroup {
                         output.accept(ModItems.MINE);
                     }).build());
 
+    public static final Supplier<CreativeModeTab> GUNS_TAB = ITEM_GROUP.register("guns_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MUSKET.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(QuatschSquad.MOD_ID, "explosives_tab"))
+                    .title(Component.translatable("itemgroup.quatschsquad.guns"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.MUSKET);
+                    }).build());
+
     public static void register(IEventBus eventBus) {
         ITEM_GROUP.register(eventBus);
     }

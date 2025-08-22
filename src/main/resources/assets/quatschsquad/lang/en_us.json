@@ -1,8 +1,11 @@
 {
   "item.quatschsquad.mine": "Landmine",
 
+  "item.quatschsquad.musket": "Brownbess",
+
   "block.quatschsquad.globe": "Globe",
 
   "itemgroup.quatschsquad.explosives": "QuatschSquad: Explosives",
-  "itemgroup.quatschsquad.politics": "QuatschSquad: Politics"
+  "itemgroup.quatschsquad.politics": "QuatschSquad: Politics",
+  "itemgroup.quatschsquad.guns": "QuatschSquad: Guns"
 }

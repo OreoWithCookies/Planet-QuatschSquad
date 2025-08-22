@@ -1,6 +1,7 @@
 package net.owc.quatschsquad;
 
 import net.owc.quatschsquad.block.ModBlocks;
+import net.owc.quatschsquad.component.ModDataComponents;
 import net.owc.quatschsquad.item.ModItemGroup;
 import net.owc.quatschsquad.item.ModItems;
 import org.slf4j.Logger;
@@ -34,6 +35,8 @@ public class QuatschSquad {
         ModBlocks.register(modEventBus);
 
         ModItemGroup.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 

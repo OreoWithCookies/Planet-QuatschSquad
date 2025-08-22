@@ -11,9 +11,13 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(QuatschSquad.MOD_ID);
 
-    //add Items below
+    //explosive Items
     public static final DeferredItem<Item> MINE = ITEMS.register("mine",
             () -> new MineItem(new Item.Properties().stacksTo(16)));
+
+    //Guns
+    public static final DeferredItem<Item> MUSKET = ITEMS.register("musket",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
