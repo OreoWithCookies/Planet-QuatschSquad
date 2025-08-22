@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.owc.quatschsquad.QuatschSquad;
 import net.owc.quatschsquad.block.custom.GlobeBlock;
+import net.owc.quatschsquad.block.custom.NukeBlock;
 import net.owc.quatschsquad.item.ModItems;
 
 import java.util.function.Supplier;
@@ -19,9 +20,13 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(QuatschSquad.MOD_ID);
 
-    //add Blocks below
+    //politics
     public static final DeferredBlock<Block> GLOBE = registerBlock("globe",
             () -> new GlobeBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
+    //explosives
+    public static final DeferredBlock<Block> NUKE = registerBlock("nuke",
+            () -> new NukeBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
