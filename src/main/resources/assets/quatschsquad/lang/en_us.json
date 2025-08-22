@@ -1,11 +1,13 @@
 {
   "item.quatschsquad.mine": "Landmine",
 
-  "item.quatschsquad.musket": "Brownbess",
-
   "block.quatschsquad.globe": "Globe",
 
+  "painting.quatschsquad.napoleon.title": "§lNapoleon crossing the Alps",
+  "painting.quatschsquad.napoleon.author": "Jacques-Louis David",
+  "painting.quatschsquad.mona_lisa.title": "§lMona Lisa",
+  "painting.quatschsquad.mona_lisa.author": "Leonardo da Vinci",
+
   "itemgroup.quatschsquad.explosives": "QuatschSquad: Explosives",
-  "itemgroup.quatschsquad.politics": "QuatschSquad: Politics",
-  "itemgroup.quatschsquad.guns": "QuatschSquad: Guns"
+  "itemgroup.quatschsquad.politics": "QuatschSquad: Politics"
 }

@@ -16,8 +16,8 @@ public class ModItems {
             () -> new MineItem(new Item.Properties().stacksTo(16)));
 
     //Guns
-    public static final DeferredItem<Item> MUSKET = ITEMS.register("musket",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+    /* public static final DeferredItem<Item> MUSKET = ITEMS.register("musket",
+            () -> new Item(new Item.Properties().stacksTo(1))); */
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
