@@ -16,11 +16,13 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-//2.0, 0.0, -9.0, 12.0, 12.0, 33.0
-
 public class NukeBlock extends HorizontalDirectionalBlock {
     public static final MapCodec<NukeBlock> CODEC = simpleCodec(NukeBlock::new);
-    private static final VoxelShape SHAPE = Block.box(2.0, 0.0, -9.0, 14.0, 12.0, 24.0);
+
+    private static final VoxelShape NORTH_SHAPE = Block.box(2.0, 0.0, -9.0, 14.0, 12.0, 24.0);
+    private static final VoxelShape EAST_SHAPE  = Block.box(-9.0, 0.0, 2.0, 24.0, 12.0, 14.0);
+    private static final VoxelShape SOUTH_SHAPE = Block.box(2.0, 0.0, -8.0, 14.0, 12.0, 25.0); // adjust if needed
+    private static final VoxelShape WEST_SHAPE  = Block.box(-8.0, 0.0, 2.0, 25.0, 12.0, 14.0);
 
     public NukeBlock(Properties properties) {
         super(properties);
@@ -28,7 +30,13 @@ public class NukeBlock extends HorizontalDirectionalBlock {
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPE;
+        return switch (state.getValue(FACING)) {
+            case NORTH -> NORTH_SHAPE;
+            case SOUTH -> SOUTH_SHAPE;
+            case EAST  -> EAST_SHAPE;
+            case WEST  -> WEST_SHAPE;
+            default -> NORTH_SHAPE;
+        };
     }
 
     @Override
