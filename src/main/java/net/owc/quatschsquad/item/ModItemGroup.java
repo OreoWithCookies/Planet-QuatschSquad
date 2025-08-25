@@ -33,6 +33,18 @@ public class ModItemGroup {
                         output.accept(ModBlocks.NUKE);
                     }).build());
 
+    public static final Supplier<CreativeModeTab> AMMO_TAB = ITEM_GROUP.register("ammo_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SOLID_MEDIUM_SHELL.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(QuatschSquad.MOD_ID, "explosives_tab"))
+                    .title(Component.translatable("itemgroup.quatschsquad.ammo"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.SOLID_MEDIUM_SHELL);
+                        output.accept(ModItems.SMOKE_MEDIUM_SHELL);
+                        output.accept(ModItems.AP_MEDIUM_SHELL);
+                        output.accept(ModItems.HE_MEDIUM_SHELL);
+                        output.accept(ModItems.MEDIUM_SHELL_CASING);
+                    }).build());
+
     public static void register(IEventBus eventBus) {
         ITEM_GROUP.register(eventBus);
     }

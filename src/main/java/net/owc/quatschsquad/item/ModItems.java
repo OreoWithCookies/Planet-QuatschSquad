@@ -15,6 +15,19 @@ public class ModItems {
     public static final DeferredItem<Item> MINE = ITEMS.register("mine",
             () -> new MineItem(new Item.Properties().stacksTo(16)));
 
+    //artillery Shells
+    public static final DeferredItem<Item> SOLID_MEDIUM_SHELL = ITEMS.register("solid_medium_shell",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AP_MEDIUM_SHELL = ITEMS.register("ap_medium_shell",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SMOKE_MEDIUM_SHELL = ITEMS.register("smoke_medium_shell",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> HE_MEDIUM_SHELL = ITEMS.register("he_medium_shell",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> MEDIUM_SHELL_CASING = ITEMS.register("medium_shell_casing",
+            () -> new Item(new Item.Properties()));
+
     //Guns
     /* public static final DeferredItem<Item> MUSKET = ITEMS.register("musket",
             () -> new Item(new Item.Properties().stacksTo(1))); */

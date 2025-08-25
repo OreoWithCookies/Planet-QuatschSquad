@@ -1,3 +1,13 @@
-// 1.21	2025-08-21T11:39:32.7159111	Recipes
+// 1.21	2025-08-25T15:51:06.2624137	Recipes
 38d3a3c16ffc285b180d146724ca3c1cc08c4533 data/quatschsquad/advancement/recipes/decorations/globe.json
+e8fad177718ee4af7441edb3a13be12b428b7d27 data/quatschsquad/advancement/recipes/decorations/medium_shell_casing.json
+269e442b174f6bff608699f10dab92fbbb300bfb data/quatschsquad/advancement/recipes/misc/ap_medium_shell.json
+aa2e400e77e6d7d71517c01ac44957c8a5a6bfcd data/quatschsquad/advancement/recipes/misc/he_medium_shell.json
+42238c71d546c57f5e7d0bd589ad7a1fceea8216 data/quatschsquad/advancement/recipes/misc/smoke_medium_shell.json
+d6e15194714dac7eebe0696eb36d7de86cfa2a89 data/quatschsquad/advancement/recipes/misc/solid_medium_shell.json
+6c1a66e1fdebf3f23cc85be688d3e100880c70d5 data/quatschsquad/recipe/ap_medium_shell.json
 3af42f27ab465f0e602bda520855c18979c03e86 data/quatschsquad/recipe/globe.json
+a6dd338620d6c1b9812cee5f0f84a02208bc7a31 data/quatschsquad/recipe/he_medium_shell.json
+24a24a0b1264e3c5af2553d479b293bd818b2554 data/quatschsquad/recipe/medium_shell_casing.json
+3c4ce03683198074bab6de0d6373e7e992b476e0 data/quatschsquad/recipe/smoke_medium_shell.json
+ddc09b42670b22fa70728d737eb3cc0d0d243111 data/quatschsquad/recipe/solid_medium_shell.json

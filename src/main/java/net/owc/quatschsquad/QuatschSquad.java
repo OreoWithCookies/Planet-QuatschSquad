@@ -58,6 +58,8 @@ public class QuatschSquad {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            LOGGER.info("Subscribe to OreoWithCookies");
+            LOGGER.info("That was not a Question...");
         }
     }
 }

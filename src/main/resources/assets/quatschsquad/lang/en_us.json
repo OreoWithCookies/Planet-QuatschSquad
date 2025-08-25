@@ -1,5 +1,10 @@
 {
   "item.quatschsquad.mine": "Landmine",
+  "item.quatschsquad.solid_medium_shell": "Medium Shell (Solid)",
+  "item.quatschsquad.ap_medium_shell": "Medium Shell (Armor Piercing)",
+  "item.quatschsquad.smoke_medium_shell": "Medium Shell (Smoke)",
+  "item.quatschsquad.he_medium_shell": "Medium Shell (High Explosive)",
+  "item.quatschsquad.medium_shell_casing": "Medium Shell Casing",
 
   "block.quatschsquad.globe": "Globe",
   "block.quatschsquad.nuke": "Atomic Bomb",
@@ -10,5 +15,6 @@
   "painting.quatschsquad.mona_lisa.author": "Leonardo da Vinci",
 
   "itemgroup.quatschsquad.explosives": "QuatschSquad: Explosives",
-  "itemgroup.quatschsquad.politics": "QuatschSquad: Politics"
+  "itemgroup.quatschsquad.politics": "QuatschSquad: Politics",
+  "itemgroup.quatschsquad.ammo": "QuatschSquad: Ammunition"
 }
