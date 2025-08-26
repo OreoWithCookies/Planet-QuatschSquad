@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench | Made by OreoWithCookies",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "quatschsquad:item/medium_solid_shell",
-		"particle": "quatschsquad:item/medium_solid_shell"
+		"0": "quatschsquad:item/medium_gas_shell",
+		"particle": "quatschsquad:item/medium_gas_shell"
 	},
 	"elements": [
 		{

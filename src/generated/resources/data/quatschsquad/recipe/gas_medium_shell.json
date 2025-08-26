@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "quatschsquad:shell_tip_ap"
+      "item": "quatschsquad:shell_tip_gas"
     },
     "B": {
       "item": "minecraft:gold_ingot"
@@ -19,6 +19,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "quatschsquad:ap_medium_shell"
+    "id": "quatschsquad:gas_medium_shell"
   }
 }

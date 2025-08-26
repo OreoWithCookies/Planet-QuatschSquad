@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gold": {
+    "has_shell_tip": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_ingot"
+            "items": "quatschsquad:shell_tip"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quatschsquad:medium_shell_casing"
+        "recipe": "quatschsquad:shell_tip_ap"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_gold"
+      "has_shell_tip"
     ]
   ],
   "rewards": {
     "recipes": [
-      "quatschsquad:medium_shell_casing"
+      "quatschsquad:shell_tip_ap"
     ]
   }
 }

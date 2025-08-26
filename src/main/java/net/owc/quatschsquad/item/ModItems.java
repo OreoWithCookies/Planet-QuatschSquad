@@ -24,8 +24,18 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> HE_MEDIUM_SHELL = ITEMS.register("he_medium_shell",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GAS_MEDIUM_SHELL = ITEMS.register("gas_medium_shell",
+            () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> MEDIUM_SHELL_CASING = ITEMS.register("medium_shell_casing",
+    public static final DeferredItem<Item> SHELL_TIP = ITEMS.register("shell_tip",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SHELL_TIP_AP = ITEMS.register("shell_tip_ap",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SHELL_TIP_HE = ITEMS.register("shell_tip_he",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SHELL_TIP_GAS = ITEMS.register("shell_tip_gas",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SHELL_TIP_SMOKE = ITEMS.register("shell_tip_smoke",
             () -> new Item(new Item.Properties()));
 
     //Guns

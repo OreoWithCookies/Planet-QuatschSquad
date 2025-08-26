@@ -29,31 +29,76 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', Ingredient.of(Items.GOLD_INGOT))
                 .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.MEDIUM_SHELL_CASING.get())
-                .pattern("A A")
-                .pattern("A A")
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.SOLID_MEDIUM_SHELL.get())
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" CC")
+                .define('A', ModItems.SHELL_TIP.get())
+                .define('B', Ingredient.of(Items.GOLD_INGOT))
+                .define('C', Ingredient.of(Items.GUNPOWDER))
+                .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.AP_MEDIUM_SHELL.get())
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" CC")
+                .define('A', ModItems.SHELL_TIP_AP.get())
+                .define('B', Ingredient.of(Items.GOLD_INGOT))
+                .define('C', Ingredient.of(Items.GUNPOWDER))
+                .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.HE_MEDIUM_SHELL.get())
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" CC")
+                .define('A', ModItems.SHELL_TIP_HE.get())
+                .define('B', Ingredient.of(Items.GOLD_INGOT))
+                .define('C', Ingredient.of(Items.GUNPOWDER))
+                .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.GAS_MEDIUM_SHELL.get())
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" CC")
+                .define('A', ModItems.SHELL_TIP_GAS.get())
+                .define('B', Ingredient.of(Items.GOLD_INGOT))
+                .define('C', Ingredient.of(Items.GUNPOWDER))
+                .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.SMOKE_MEDIUM_SHELL.get())
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" CC")
+                .define('A', ModItems.SHELL_TIP_SMOKE.get())
+                .define('B', Ingredient.of(Items.GOLD_INGOT))
+                .define('C', Ingredient.of(Items.GUNPOWDER))
+                .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.SHELL_TIP.get())
+                .pattern(" A ")
+                .pattern(" A ")
                 .pattern("AAA")
                 .define('A', Ingredient.of(Items.IRON_INGOT))
-                .unlockedBy("has_gold", has(Items.IRON_INGOT)).save(recipeOutput);
+                .unlockedBy("has_raw_iron", has(Items.RAW_IRON)).save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SOLID_MEDIUM_SHELL.get(), 1)
-                .requires(ModItems.MEDIUM_SHELL_CASING)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SHELL_TIP_AP.get(), 1)
+                .requires(ModItems.SHELL_TIP)
                 .requires(Ingredient.of(Items.IRON_INGOT))
-                .unlockedBy("has_bismuth_block", has(ModItems.MEDIUM_SHELL_CASING)).save(recipeOutput);
+                .unlockedBy("has_shell_tip", has(ModItems.SHELL_TIP)).save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.AP_MEDIUM_SHELL.get(), 1)
-                .requires(ModItems.MEDIUM_SHELL_CASING)
-                .requires(Ingredient.of(Items.IRON_BLOCK))
-                .unlockedBy("has_bismuth_block", has(ModItems.MEDIUM_SHELL_CASING)).save(recipeOutput);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.HE_MEDIUM_SHELL.get(), 1)
-                .requires(ModItems.MEDIUM_SHELL_CASING)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SHELL_TIP_HE.get(), 1)
+                .requires(ModItems.SHELL_TIP)
                 .requires(Ingredient.of(Items.TNT))
-                .unlockedBy("has_bismuth_block", has(ModItems.MEDIUM_SHELL_CASING)).save(recipeOutput);
+                .unlockedBy("has_shell_tip", has(ModItems.SHELL_TIP)).save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SMOKE_MEDIUM_SHELL.get(), 1)
-                .requires(ModItems.MEDIUM_SHELL_CASING)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SHELL_TIP_GAS.get(), 1)
+                .requires(ModItems.SHELL_TIP)
+                .requires(Ingredient.of(Items.POISONOUS_POTATO))
+                .unlockedBy("has_shell_tip", has(ModItems.SHELL_TIP)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SHELL_TIP_SMOKE.get(), 1)
+                .requires(ModItems.SHELL_TIP)
                 .requires(Ingredient.of(Items.WIND_CHARGE))
-                .unlockedBy("has_bismuth_block", has(ModItems.MEDIUM_SHELL_CASING)).save(recipeOutput);
+                .unlockedBy("has_shell_tip", has(ModItems.SHELL_TIP)).save(recipeOutput);
     }
 }

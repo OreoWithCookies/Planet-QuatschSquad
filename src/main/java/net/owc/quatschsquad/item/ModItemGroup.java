@@ -42,7 +42,12 @@ public class ModItemGroup {
                         output.accept(ModItems.SMOKE_MEDIUM_SHELL);
                         output.accept(ModItems.AP_MEDIUM_SHELL);
                         output.accept(ModItems.HE_MEDIUM_SHELL);
-                        output.accept(ModItems.MEDIUM_SHELL_CASING);
+                        output.accept(ModItems.GAS_MEDIUM_SHELL);
+                        output.accept(ModItems.SHELL_TIP);
+                        output.accept(ModItems.SHELL_TIP_SMOKE);
+                        output.accept(ModItems.SHELL_TIP_AP);
+                        output.accept(ModItems.SHELL_TIP_HE);
+                        output.accept(ModItems.SHELL_TIP_GAS);
                     }).build());
 
     public static void register(IEventBus eventBus) {

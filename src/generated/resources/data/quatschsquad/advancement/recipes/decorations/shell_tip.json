@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bismuth_block": {
+    "has_raw_iron": {
       "conditions": {
         "items": [
           {
-            "items": "quatschsquad:medium_shell_casing"
+            "items": "minecraft:raw_iron"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quatschsquad:solid_medium_shell"
+        "recipe": "quatschsquad:shell_tip"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bismuth_block"
+      "has_raw_iron"
     ]
   ],
   "rewards": {
     "recipes": [
-      "quatschsquad:solid_medium_shell"
+      "quatschsquad:shell_tip"
     ]
   }
 }

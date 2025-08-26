@@ -7,12 +7,12 @@
     }
   },
   "pattern": [
-    "A A",
-    "A A",
+    " A ",
+    " A ",
     "AAA"
   ],
   "result": {
     "count": 1,
-    "id": "quatschsquad:medium_shell_casing"
+    "id": "quatschsquad:shell_tip"
   }
 }

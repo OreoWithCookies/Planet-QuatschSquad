@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shell_tip": {
+      "conditions": {
+        "items": [
+          {
+            "items": "quatschsquad:shell_tip"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "quatschsquad:shell_tip_gas"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_shell_tip"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "quatschsquad:shell_tip_gas"
+    ]
+  }
+}

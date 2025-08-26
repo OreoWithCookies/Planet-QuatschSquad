@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bismuth_block": {
+    "has_gold": {
       "conditions": {
         "items": [
           {
-            "items": "quatschsquad:medium_shell_casing"
+            "items": "minecraft:raw_gold"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bismuth_block"
+      "has_gold"
     ]
   ],
   "rewards": {

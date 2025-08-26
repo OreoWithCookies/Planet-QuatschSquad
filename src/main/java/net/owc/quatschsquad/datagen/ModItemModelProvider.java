@@ -13,6 +13,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(ModItems.MEDIUM_SHELL_CASING.get());
+        basicItem(ModItems.SHELL_TIP.get());
+        basicItem(ModItems.SHELL_TIP_GAS.get());
+        basicItem(ModItems.SHELL_TIP_SMOKE.get());
+        basicItem(ModItems.SHELL_TIP_AP.get());
+        basicItem(ModItems.SHELL_TIP_HE.get());
     }
 }
