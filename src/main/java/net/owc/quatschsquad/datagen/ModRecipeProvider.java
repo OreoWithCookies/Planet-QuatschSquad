@@ -32,46 +32,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.SOLID_MEDIUM_SHELL.get())
                 .pattern(" A ")
                 .pattern(" B ")
-                .pattern(" CC")
+                .pattern(" C ")
                 .define('A', ModItems.SHELL_TIP.get())
-                .define('B', Ingredient.of(Items.GOLD_INGOT))
+                .define('B', ModItems.MEDIUM_SHELL_CASING.get())
                 .define('C', Ingredient.of(Items.GUNPOWDER))
                 .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.AP_MEDIUM_SHELL.get())
                 .pattern(" A ")
                 .pattern(" B ")
-                .pattern(" CC")
+                .pattern(" C ")
                 .define('A', ModItems.SHELL_TIP_AP.get())
-                .define('B', Ingredient.of(Items.GOLD_INGOT))
+                .define('B', ModItems.MEDIUM_SHELL_CASING.get())
                 .define('C', Ingredient.of(Items.GUNPOWDER))
                 .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.HE_MEDIUM_SHELL.get())
                 .pattern(" A ")
                 .pattern(" B ")
-                .pattern(" CC")
+                .pattern(" C ")
                 .define('A', ModItems.SHELL_TIP_HE.get())
-                .define('B', Ingredient.of(Items.GOLD_INGOT))
+                .define('B', ModItems.MEDIUM_SHELL_CASING.get())
                 .define('C', Ingredient.of(Items.GUNPOWDER))
                 .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.GAS_MEDIUM_SHELL.get())
                 .pattern(" A ")
                 .pattern(" B ")
-                .pattern(" CC")
+                .pattern(" C ")
                 .define('A', ModItems.SHELL_TIP_GAS.get())
-                .define('B', Ingredient.of(Items.GOLD_INGOT))
+                .define('B', ModItems.MEDIUM_SHELL_CASING.get())
                 .define('C', Ingredient.of(Items.GUNPOWDER))
                 .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.SMOKE_MEDIUM_SHELL.get())
                 .pattern(" A ")
                 .pattern(" B ")
-                .pattern(" CC")
+                .pattern(" C ")
                 .define('A', ModItems.SHELL_TIP_SMOKE.get())
-                .define('B', Ingredient.of(Items.GOLD_INGOT))
+                .define('B', ModItems.MEDIUM_SHELL_CASING.get())
                 .define('C', Ingredient.of(Items.GUNPOWDER))
+                .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.MEDIUM_SHELL_CASING.get())
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', Ingredient.of(Items.GOLD_INGOT))
                 .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.SHELL_TIP.get())

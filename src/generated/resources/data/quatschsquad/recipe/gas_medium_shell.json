@@ -6,7 +6,7 @@
       "item": "quatschsquad:shell_tip_gas"
     },
     "B": {
-      "item": "minecraft:gold_ingot"
+      "item": "quatschsquad:medium_shell_casing"
     },
     "C": {
       "item": "minecraft:gunpowder"
@@ -15,7 +15,7 @@
   "pattern": [
     " A ",
     " B ",
-    " CC"
+    " C "
   ],
   "result": {
     "count": 1,

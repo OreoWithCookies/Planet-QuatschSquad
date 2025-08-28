@@ -43,6 +43,8 @@ public class ModItemGroup {
                         output.accept(ModItems.AP_MEDIUM_SHELL);
                         output.accept(ModItems.HE_MEDIUM_SHELL);
                         output.accept(ModItems.GAS_MEDIUM_SHELL);
+                        output.accept(ModItems.MEDIUM_SHELL_CASING);
+
                         output.accept(ModItems.SHELL_TIP);
                         output.accept(ModItems.SHELL_TIP_SMOKE);
                         output.accept(ModItems.SHELL_TIP_AP);

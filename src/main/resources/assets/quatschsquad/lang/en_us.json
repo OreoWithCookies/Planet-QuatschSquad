@@ -1,10 +1,13 @@
 {
   "item.quatschsquad.mine": "Landmine",
+
   "item.quatschsquad.solid_medium_shell": "Medium Shell (Solid)",
   "item.quatschsquad.ap_medium_shell": "Medium Shell (Armor Piercing)",
   "item.quatschsquad.smoke_medium_shell": "Medium Shell (Smoke)",
   "item.quatschsquad.he_medium_shell": "Medium Shell (High Explosive)",
   "item.quatschsquad.gas_medium_shell": "Medium Shell (Gas)",
+  "item.quatschsquad.medium_shell_casing": "Medium Shell Casing",
+
   "item.quatschsquad.shell_tip": "Shell Tip",
   "item.quatschsquad.shell_tip_gas": "Shell Tip (Gas)",
   "item.quatschsquad.shell_tip_smoke": "Shell Tip (Smoke)",

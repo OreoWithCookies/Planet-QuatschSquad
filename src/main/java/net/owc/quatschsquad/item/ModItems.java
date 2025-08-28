@@ -37,6 +37,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SHELL_TIP_SMOKE = ITEMS.register("shell_tip_smoke",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MEDIUM_SHELL_CASING = ITEMS.register("medium_shell_casing",
+            () -> new Item(new Item.Properties()));
 
     //Guns
     /* public static final DeferredItem<Item> MUSKET = ITEMS.register("musket",
