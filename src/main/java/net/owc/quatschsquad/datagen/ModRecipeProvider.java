@@ -29,6 +29,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', Ingredient.of(Items.GOLD_INGOT))
                 .unlockedBy("has_gold", has(Items.RAW_GOLD)).save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CONSTITUTION_ITEM.get(), 1)
+                .requires(Ingredient.of(Items.PAPER))
+                .requires(Ingredient.of(Items.FEATHER))
+                .unlockedBy("has_constitution_item", has(ModItems.CONSTITUTION_ITEM)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.SOLID_MEDIUM_SHELL.get())
                 .pattern(" A ")
                 .pattern(" B ")

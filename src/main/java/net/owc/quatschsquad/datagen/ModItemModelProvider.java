@@ -18,5 +18,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SHELL_TIP_SMOKE.get());
         basicItem(ModItems.SHELL_TIP_AP.get());
         basicItem(ModItems.SHELL_TIP_HE.get());
+        basicItem(ModItems.CONSTITUTION_ITEM.get());
     }
 }

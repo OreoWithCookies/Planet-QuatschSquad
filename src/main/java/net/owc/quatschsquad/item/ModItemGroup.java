@@ -22,6 +22,7 @@ public class ModItemGroup {
                     .title(Component.translatable("itemgroup.quatschsquad.politics"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.GLOBE);
+                        output.accept(ModItems.CONSTITUTION_ITEM);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EXPLOSIVES_TAB = ITEM_GROUP.register("explosives_tab",

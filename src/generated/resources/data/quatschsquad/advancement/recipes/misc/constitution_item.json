@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_constitution_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "quatschsquad:constitution_item"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "quatschsquad:constitution_item"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_constitution_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "quatschsquad:constitution_item"
+    ]
+  }
+}

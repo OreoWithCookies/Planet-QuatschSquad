@@ -11,6 +11,10 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(QuatschSquad.MOD_ID);
 
+    //politics Items
+    public static final DeferredItem<Item> CONSTITUTION_ITEM = ITEMS.register("constitution_item",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     //explosive Items
     public static final DeferredItem<Item> MINE = ITEMS.register("mine",
             () -> new MineItem(new Item.Properties().stacksTo(16)));
