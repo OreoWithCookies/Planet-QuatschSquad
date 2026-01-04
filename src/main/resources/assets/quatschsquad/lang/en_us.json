@@ -1,30 +1,12 @@
 {
   "item.quatschsquad.constitution_item": "Constitution Paper",
 
-  "item.quatschsquad.mine": "Landmine",
-
-  "item.quatschsquad.solid_medium_shell": "Medium Shell (Solid)",
-  "item.quatschsquad.ap_medium_shell": "Medium Shell (Armor Piercing)",
-  "item.quatschsquad.smoke_medium_shell": "Medium Shell (Smoke)",
-  "item.quatschsquad.he_medium_shell": "Medium Shell (High Explosive)",
-  "item.quatschsquad.gas_medium_shell": "Medium Shell (Gas)",
-  "item.quatschsquad.medium_shell_casing": "Medium Shell Casing",
-
-  "item.quatschsquad.shell_tip": "Shell Tip",
-  "item.quatschsquad.shell_tip_gas": "Shell Tip (Gas)",
-  "item.quatschsquad.shell_tip_smoke": "Shell Tip (Smoke)",
-  "item.quatschsquad.shell_tip_ap": "Shell Tip (Armor Piercing)",
-  "item.quatschsquad.shell_tip_he": "Shell Tip (High Explosive)",
-
   "block.quatschsquad.globe": "Globe",
-  "block.quatschsquad.nuke": "Atomic Bomb",
 
   "painting.quatschsquad.napoleon.title": "§lNapoleon crossing the Alps",
   "painting.quatschsquad.napoleon.author": "Jacques-Louis David",
   "painting.quatschsquad.mona_lisa.title": "§lMona Lisa",
   "painting.quatschsquad.mona_lisa.author": "Leonardo da Vinci",
 
-  "itemgroup.quatschsquad.explosives": "QuatschSquad: Explosives",
-  "itemgroup.quatschsquad.politics": "QuatschSquad: Politics",
-  "itemgroup.quatschsquad.ammo": "QuatschSquad: Ammunition"
+  "itemgroup.quatschsquad.politics": "QuatschSquad: Politics"
 }
